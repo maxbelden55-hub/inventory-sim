@@ -1,0 +1,16 @@
+{
+ "base_static": 422378.28983986843,
+ "base_adaptive": 363996.6773358396,
+ "base_static_fill": 0.9215497027521282,
+ "base_adaptive_fill": 0.9298947601231177,
+ "base_static_dead": 52457.77349238845,
+ "base_adaptive_dead": 12525.459490347046,
+ "base_static_active": 369920.51634747995,
+ "base_adaptive_active": 351471.21784549253,
+ "best_N_static_rule": 1,
+ "best_static_rule_cost": 371642.19836443855,
+ "share_of_ml_saving_captured": 0.8690423114285968,
+ "best_N_adaptive_rule": 1,
+ "best_adaptive_rule_cost": 350007.21772529354,
+ "dead_products": 908
+}

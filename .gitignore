@@ -1,0 +1,12 @@
+# Virtual environment
+.venv/
+
+# Raw source data (large; download separately, see README)
+data/raw/
+
+# Pickled intermediates
+data/*.pkl
+
+# Python caches
+__pycache__/
+*.py[cod]

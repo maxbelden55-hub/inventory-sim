@@ -1,0 +1,170 @@
+{
+  "config": {
+    "name": "calibrated",
+    "order_cost": 3.5,
+    "purchase_share": 0.7,
+    "holding_rate": 0.2,
+    "backorder_rate": 0.005,
+    "backorder_once": 0.35,
+    "lead_min": 5,
+    "lead_extra": 2.0,
+    "retrain": false
+  },
+  "critical_ratio": 0.9287531806615776,
+  "tuned_global": [
+    0.98,
+    1.0,
+    "band"
+  ],
+  "tuned_tiers": {
+    "Intermittent": [
+      0.95,
+      1.0,
+      "quantile"
+    ],
+    "Low volume": [
+      0.95,
+      1.5,
+      "quantile"
+    ],
+    "Mid volume": [
+      0.98,
+      0.75,
+      "quantile"
+    ],
+    "High volume": [
+      0.99,
+      1.5,
+      "band"
+    ]
+  },
+  "tuned_tiers_foldB_only": {
+    "Intermittent": [
+      0.95,
+      1.5,
+      "quantile"
+    ],
+    "Low volume": [
+      0.95,
+      1.5,
+      "quantile"
+    ],
+    "Mid volume": [
+      0.98,
+      1.5,
+      "band"
+    ],
+    "High volume": [
+      0.99,
+      1.5,
+      "band"
+    ]
+  },
+  "tuned_tiers_band_only": {
+    "Intermittent": [
+      0.95,
+      1.0,
+      "band"
+    ],
+    "Low volume": [
+      0.95,
+      1.0,
+      "band"
+    ],
+    "Mid volume": [
+      0.98,
+      1.0,
+      "band"
+    ],
+    "High volume": [
+      0.99,
+      1.5,
+      "band"
+    ]
+  },
+  "n_products": 3799,
+  "seconds": 472,
+  "totals": {
+    "static": {
+      "cost": 440823.8823365963,
+      "in_window": 395715.846280051,
+      "terminal": 45108.036056545316,
+      "fill": 0.931537661295112,
+      "hold": 186391.101002782,
+      "order": 42598.5,
+      "back": 166726.24527726902
+    },
+    "hindsight": {
+      "cost": 193394.6629097619,
+      "in_window": 181854.48919353954,
+      "terminal": 11540.173716222376,
+      "fill": 0.9920964115229371,
+      "hold": 127235.25705658495,
+      "order": 35290.5,
+      "back": 19328.732136954586
+    },
+    "adaptive_textbook": {
+      "cost": 510309.12384142936,
+      "in_window": 491051.80770692177,
+      "terminal": 19257.316134507557,
+      "fill": 0.8560774032229328,
+      "hold": 90765.94322793692,
+      "order": 41083.0,
+      "back": 359202.86447898485
+    },
+    "adaptive_global": {
+      "cost": 458163.4641290795,
+      "in_window": 398479.269295781,
+      "terminal": 59684.19483329843,
+      "fill": 0.9431978567025658,
+      "hold": 211213.98368318996,
+      "order": 45167.5,
+      "back": 142097.785612591
+    },
+    "adaptive_tiered": {
+      "cost": 372791.7935825012,
+      "in_window": 330998.44762244273,
+      "terminal": 41793.34596005838,
+      "fill": 0.9599315910082264,
+      "hold": 180813.51268247317,
+      "order": 43396.5,
+      "back": 106788.43493996965
+    },
+    "static_rule": {
+      "cost": 392236.0450004642,
+      "in_window": 362210.9014802205,
+      "terminal": 30025.143520243757,
+      "fill": 0.9309363051976908,
+      "hold": 154362.20582792346,
+      "order": 39420.5,
+      "back": 168428.195652297
+    },
+    "adaptive_tiered_rule": {
+      "cost": 354874.57436436985,
+      "in_window": 318083.4578994186,
+      "terminal": 36791.1164649512,
+      "fill": 0.9586487048266173,
+      "hold": 168626.75312400423,
+      "order": 40022.5,
+      "back": 109434.20477541443
+    },
+    "adaptive_tiered_band_only": {
+      "cost": 377472.8361461692,
+      "in_window": 347187.6385764109,
+      "terminal": 30285.197569758428,
+      "fill": 0.9346077720642293,
+      "hold": 144192.35650205807,
+      "order": 39375.0,
+      "back": 163620.28207435278
+    },
+    "adaptive_tiered_foldB_only": {
+      "cost": 393758.81785400514,
+      "in_window": 345033.0662214024,
+      "terminal": 48725.75163260269,
+      "fill": 0.9550579751102264,
+      "hold": 190270.49493743118,
+      "order": 33232.5,
+      "back": 121530.07128397122
+    }
+  }
+}

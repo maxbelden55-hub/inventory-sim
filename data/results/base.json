@@ -1,0 +1,179 @@
+{
+  "config": {
+    "name": "base",
+    "order_cost": 5.0,
+    "purchase_share": 0.6,
+    "holding_rate": 0.25,
+    "backorder_rate": 0.05,
+    "backorder_once": 0.0,
+    "lead_min": 5,
+    "lead_extra": 2.0,
+    "retrain": true
+  },
+  "critical_ratio": 0.9918478260869565,
+  "tuned_global": [
+    0.95,
+    1.0,
+    "band"
+  ],
+  "tuned_tiers": {
+    "Intermittent": [
+      0.95,
+      1.0,
+      "band"
+    ],
+    "Low volume": [
+      0.95,
+      1.0,
+      "quantile"
+    ],
+    "Mid volume": [
+      0.95,
+      0.75,
+      "quantile"
+    ],
+    "High volume": [
+      0.98,
+      1.0,
+      "band"
+    ]
+  },
+  "tuned_tiers_foldB_only": {
+    "Intermittent": [
+      0.9,
+      1.0,
+      "quantile"
+    ],
+    "Low volume": [
+      0.95,
+      1.0,
+      "quantile"
+    ],
+    "Mid volume": [
+      0.95,
+      1.5,
+      "quantile"
+    ],
+    "High volume": [
+      0.98,
+      1.0,
+      "band"
+    ]
+  },
+  "tuned_tiers_band_only": {
+    "Intermittent": [
+      0.95,
+      1.0,
+      "band"
+    ],
+    "Low volume": [
+      0.95,
+      1.0,
+      "band"
+    ],
+    "Mid volume": [
+      0.98,
+      1.0,
+      "band"
+    ],
+    "High volume": [
+      0.98,
+      1.0,
+      "band"
+    ]
+  },
+  "n_products": 3799,
+  "seconds": 500,
+  "totals": {
+    "static": {
+      "cost": 422378.28983986843,
+      "in_window": 366283.1951743622,
+      "terminal": 56095.09466550618,
+      "fill": 0.9215497027521282,
+      "hold": 183293.77687557426,
+      "order": 56625.0,
+      "back": 126364.41829878799
+    },
+    "hindsight": {
+      "cost": 204243.55174346303,
+      "in_window": 191847.9528280901,
+      "terminal": 12395.598915372928,
+      "fill": 0.9815879364260217,
+      "hold": 129361.70813921269,
+      "order": 45855.0,
+      "back": 16631.244688877418
+    },
+    "adaptive_textbook": {
+      "cost": 580542.2994291397,
+      "in_window": 463713.4124328949,
+      "terminal": 116828.88699624475,
+      "fill": 0.9679444331811768,
+      "hold": 345921.94308532064,
+      "order": 63670.0,
+      "back": 54121.46934757431
+    },
+    "adaptive_global": {
+      "cost": 389330.9293390932,
+      "in_window": 350971.29015974293,
+      "terminal": 38359.63917935034,
+      "fill": 0.8862747868682587,
+      "hold": 119521.12200059295,
+      "order": 53285.0,
+      "back": 178165.16815914994
+    },
+    "adaptive_tiered": {
+      "cost": 363996.6773358396,
+      "in_window": 323622.6982548005,
+      "terminal": 40373.97908103905,
+      "fill": 0.9298947601231177,
+      "hold": 145810.91951416715,
+      "order": 58585.0,
+      "back": 119226.77874063338
+    },
+    "static_rule": {
+      "cost": 371642.19836443855,
+      "in_window": 330795.1045754687,
+      "terminal": 40847.093788969876,
+      "fill": 0.9208797431155836,
+      "hold": 150840.65165980655,
+      "order": 52250.0,
+      "back": 127704.45291566214
+    },
+    "adaptive_tiered_rule": {
+      "cost": 350007.21772529354,
+      "in_window": 313278.9985345051,
+      "terminal": 36728.21919078844,
+      "fill": 0.9290673707232862,
+      "hold": 137176.61263270827,
+      "order": 54840.0,
+      "back": 121262.38590179684
+    },
+    "adaptive_tiered_band_only": {
+      "cost": 360927.7402286059,
+      "in_window": 318882.43568148906,
+      "terminal": 42045.30454711689,
+      "fill": 0.926361575464917,
+      "hold": 148497.18761340727,
+      "order": 53745.0,
+      "back": 116640.24806808183
+    },
+    "adaptive_tiered_foldB_only": {
+      "cost": 373400.3253333784,
+      "in_window": 322679.2354591829,
+      "terminal": 50721.0898741955,
+      "fill": 0.9466261393819128,
+      "hold": 176751.9685552126,
+      "order": 50925.0,
+      "back": 95002.26690397026
+    },
+    "adaptive_tiered_retrained": {
+      "cost": 362055.51687518496,
+      "in_window": 321052.439826502,
+      "terminal": 41003.07704868302,
+      "fill": 0.929025901419786,
+      "hold": 151640.93715457633,
+      "order": 58490.0,
+      "back": 110921.50267192563
+    }
+  }
+}

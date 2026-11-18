@@ -1,0 +1,111 @@
+{
+  "config": {
+    "name": "backorder_1pct",
+    "order_cost": 5.0,
+    "purchase_share": 0.6,
+    "holding_rate": 0.25,
+    "backorder_rate": 0.01,
+    "lead_min": 5,
+    "lead_extra": 2.0,
+    "retrain": false
+  },
+  "critical_ratio": 0.9605263157894737,
+  "tuned_global": [
+    0.9,
+    1.0
+  ],
+  "tuned_tiers": {
+    "Intermittent": [
+      0.8,
+      0.75
+    ],
+    "Low volume": [
+      0.9,
+      0.75
+    ],
+    "Mid volume": [
+      0.9,
+      1.0
+    ],
+    "High volume": [
+      0.95,
+      1.0
+    ]
+  },
+  "tuned_tiers_foldB_only": {
+    "Intermittent": [
+      0.9,
+      1.0
+    ],
+    "Low volume": [
+      0.9,
+      1.0
+    ],
+    "Mid volume": [
+      0.95,
+      1.0
+    ],
+    "High volume": [
+      0.95,
+      1.0
+    ]
+  },
+  "n_products": 3799,
+  "seconds": 480,
+  "totals": {
+    "static": {
+      "cost": 257761.1554776516,
+      "in_window": 227331.86069638774,
+      "terminal": 30429.29478126386,
+      "fill": 0.8506570068787848,
+      "hold": 121674.1160432598,
+      "order": 58625.0,
+      "back": 47032.74465312795
+    },
+    "hindsight": {
+      "cost": 170655.96878798067,
+      "in_window": 162877.13995800418,
+      "terminal": 7778.828829976498,
+      "fill": 0.9226662509496983,
+      "hold": 95153.99134305824,
+      "order": 46145.0,
+      "back": 21578.148614945938
+    },
+    "adaptive_textbook": {
+      "cost": 263624.9989636557,
+      "in_window": 227950.72579350197,
+      "terminal": 35674.27317015371,
+      "fill": 0.9026305361520172,
+      "hold": 143481.45958074654,
+      "order": 53930.0,
+      "back": 30539.266212755425
+    },
+    "adaptive_global": {
+      "cost": 222399.718831421,
+      "in_window": 199675.23524106192,
+      "terminal": 22724.483590359057,
+      "fill": 0.8242537573236839,
+      "hold": 92353.37626775572,
+      "order": 51950.0,
+      "back": 55371.858973306196
+    },
+    "adaptive_tiered": {
+      "cost": 215511.1076436669,
+      "in_window": 197014.93588687008,
+      "terminal": 18496.171756796863,
+      "fill": 0.8400612414578355,
+      "hold": 85639.78411089396,
+      "order": 55410.0,
+      "back": 55965.151775976105
+    },
+    "adaptive_tiered_foldB_only": {
+      "cost": 222490.28680641443,
+      "in_window": 198755.68765915598,
+      "terminal": 23734.59914725845,
+      "fill": 0.8736171779166232,
+      "hold": 105471.22500644751,
+      "order": 52000.0,
+      "back": 41284.46265270848
+    }
+  }
+}

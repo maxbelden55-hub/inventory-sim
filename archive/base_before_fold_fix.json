@@ -1,0 +1,81 @@
+{
+  "config": {
+    "name": "base",
+    "order_cost": 5.0,
+    "purchase_share": 0.6,
+    "holding_rate": 0.25,
+    "backorder_rate": 0.05,
+    "lead_min": 5,
+    "lead_extra": 2.0,
+    "retrain": true
+  },
+  "critical_ratio": 0.9918478260869565,
+  "tuned_global": [
+    0.98,
+    2.0
+  ],
+  "tuned_tiers": {
+    "Intermittent": [
+      0.98,
+      2.0
+    ],
+    "Low volume": [
+      0.98,
+      2.0
+    ],
+    "Mid volume": [
+      0.98,
+      1.0
+    ],
+    "High volume": [
+      0.99,
+      2.0
+    ]
+  },
+  "n_products": 3799,
+  "seconds": 836,
+  "totals": {
+    "static": {
+      "cost": 371163.21148535545,
+      "fill": 0.9253998971970847,
+      "hold": 195101.54876869216,
+      "order": 54570.0,
+      "back": 121491.6627166633
+    },
+    "hindsight": {
+      "cost": 189541.34378064694,
+      "fill": 0.9827473874338796,
+      "hold": 128310.70100099295,
+      "order": 46220.0,
+      "back": 15010.642779654005
+    },
+    "adaptive_textbook": {
+      "cost": 463507.82011923834,
+      "fill": 0.9678005193390306,
+      "hold": 345836.32572979364,
+      "order": 63605.0,
+      "back": 54066.49438944475
+    },
+    "adaptive_global": {
+      "cost": 399045.33760433266,
+      "fill": 0.9421223682351278,
+      "hold": 272750.01997562574,
+      "order": 35550.0,
+      "back": 90745.31762870695
+    },
+    "adaptive_tiered": {
+      "cost": 395678.6314118117,
+      "fill": 0.9488655329675844,
+      "hold": 268383.35876440257,
+      "order": 43110.0,
+      "back": 84185.2726474092
+    },
+    "adaptive_tiered_retrained": {
+      "cost": 379039.16622966726,
+      "fill": 0.9506777415305349,
+      "hold": 259778.31390091928,
+      "order": 43270.0,
+      "back": 75990.85232874799
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+ "shock_date": "2011-04-04",
+ "products": 400,
+ "weeks_to_track_within_20pct": {
+  "surge": 7,
+  "collapse": 15,
+  "trend": 11
+ },
+ "pre_shock_forecast_to_actual": 0.8346976077976218
+}
